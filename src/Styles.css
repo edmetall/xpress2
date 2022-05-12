@@ -1,0 +1,118 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(./assets/img/background1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    padding-top: 70px;
+}
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.logo a{
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+
+}
+
+nav.black ul{
+    background: rgba(0, 0, 0, 0.6);
+}
+nav.black ul li a{
+    color: rgb(195, 195, 195);
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+#contact #floating{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px -10px rgba(0,0,0,0.75);
+    margin-bottom: 100px;
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+#contact #floating form{
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 3em;
+    height: 100%;
+    min-width: 320px;
+    position: relative;
+}
+#contact #floating #form-info{
+    display: inline-block;
+    width: 35%;
+    padding: 3em;
+    box-sizing: border-box;
+    height: 100%;
+    color:  rgb(195, 195, 195);;
+    vertical-align: top;
+    min-width: 260px;
+    position: relative;
+}
